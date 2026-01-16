@@ -5,15 +5,67 @@ Entorno: GitHub Codespaces.
 Comandos:
 git clone:
 
+Clona un repositorio remoto de GitHub en el equipo local. 
+En la práctica se ha utilizado para hacer la copia del repositorio p1 desde GitHub para trabajar con el.
+El repositorio ya estaba clonado, por lo que no hacia falta poner el comando, se abrió al crear el Codespace.
+
 git status:
+
+Enseña el estado del repositorio, como la rama actual o si hay archivos modificados.
+Se emplea en la práctica para comprobar el estado del repositorio antes y después de añadir archivos y hacer los commits.
+@EvaMovilla ➜ /workspaces/p1 (main) $ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+@EvaMovilla ➜ /workspaces/p1 (main) $ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git.txt
 
 git add:
 
+Añade los archivos. 
+Se utiliza para añadir el archivo git.txt.
+
 git commit:
+
+Guarda los cambios en el historia del respositorio.
+Se ha utilizado para guardar el archivo git.txt en el repositorio.
+
+[main 8068958] Añadit git.txt
+ 1 file changed, 20 insertions(+)
+ create mode 100644 git.txt
 
 git push:
 
+Envía los commits al repositorio en GitHub.
+Se utiliza para subir el archivo git.txt desde el Codespace a mi repositorio fork en GitHub.
+
+@EvaMovilla ➜ /workspaces/p1 (main) $ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 396 bytes | 396.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/EvaMovilla/p1-fork.git
+   07720b5..8068958  main -> main
+
 git checkout:
+
+Cambia de rama o crea una nueva rama en el repositorio.
+Se ha utilizado para crear una nueva rama (practica1) y después volver a la rama principal main.
+
+@EvaMovilla ➜ /workspaces/p1 (main) $ git checkout -b practica1
+Switched to a new branch 'practica1'
+@EvaMovilla ➜ /workspaces/p1 (practica1) $ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 
 
 
